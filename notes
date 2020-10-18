@@ -139,3 +139,45 @@ git commit -m "second commit"
 git status
 
 git push
+
+
+git reset from undoing git add .
+
+git reset something for undoing something
+
+git log show the history of commits with commit name the most upper one is the latest, i need to check the code meaning 
+
+now am inside the origin/main
+
+To delete git 
+rm -rf .git
+
+
+#steps to create new branch
+
+git branch alpha
+git status
+#to get all branches
+git branch --list
+#to change to the other branch
+git checkout alpha
+#to get the branches we have
+git branch
+#to create a branch and checkout to it in one step
+git checkout -b beta
+#for the first time when we create a new branch and checkout to it, we need to push using the following command or create it in github and push normally
+git push --set-upstream origin alpha
+
+#note:when he checkout to the master the editted files in the alpha in the code editor disappeared
+
+
+
+
+
+
+
+#to create a file
+touch style.css
+
+#to check the files inside this director
+ls -la
