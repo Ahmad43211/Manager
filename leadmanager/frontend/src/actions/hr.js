@@ -22,7 +22,7 @@ export const deleteHumanresource = (id) => (dispatch, getState) => {
   axios
     .delete(`/api/hrs/${id}/`, tokenConfig(getState))
     .then((res) => {
-      dispatch(createMessage({ deleteHumanresource: 'Deleted' }));
+      dispatch(createMessage({ deleteHumanresource: 'HR Deleted' }));
       dispatch({
         type: DELETE_HUMANRESOURCE,
         payload: id,
@@ -36,7 +36,7 @@ export const addHumanresource = (hr) => (dispatch, getState) => {
   axios
     .post('/api/hrs/', hr, tokenConfig(getState))
     .then((res) => {
-      dispatch(createMessage({ addHumanresource: 'Added' }));
+      dispatch(createMessage({ addHumanresource: 'HR Added' }));
       dispatch({
         type: ADD_HUMANRESOURCE,
         payload: res.data,

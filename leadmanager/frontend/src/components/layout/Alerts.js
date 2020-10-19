@@ -22,6 +22,18 @@ export class Alerts extends Component {
     if (message !== prevProps.message) {
       if (message.deleteLead) alert.success(message.deleteLead);
       if (message.addLead) alert.success(message.addLead);
+      if (message.deleteMarketing) alert.success(message.deleteMarketing);
+      if (message.addMarketing) alert.success(message.addMarketing);
+      if (message.deleteCustomer) alert.success(message.deleteCustomer);
+      if (message.addCustomer) alert.success(message.addCustomer);
+      if (message.deleteProductd) alert.success(message.deleteProductd);
+      if (message.addProductd) alert.success(message.addProductd);
+      if (message.deleteProducto) alert.success(message.deleteProducto);
+      if (message.addProducto) alert.success(message.addProducto);
+      if (message.deleteHumanresource) alert.success(message.deleteHumanresource);
+      if (message.addHumanresource) alert.success(message.addHumanresource);
+      if (message.deleteProfitl) alert.success(message.deleteProfitl);
+      if (message.addProfitl) alert.success(message.addProfitl);
       if (message.passwordNotMatch) alert.error(message.passwordNotMatch);
     }
   }
