@@ -57,7 +57,7 @@ class ProductDevelopmentViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         user=self.request.user
-        return ProductDevelopment.objects.filter(owner=user,created_at__gte='2020-01-01').order_by('-created_at')[0:5]
+        return ProductDevelopment.objects.filter(owner=user).order_by('-created_at')[0:5]
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
